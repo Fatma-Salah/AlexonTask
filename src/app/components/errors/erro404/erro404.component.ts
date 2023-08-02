@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Erro404Component implements OnInit {
   ngOnInit(): void {
-    localStorage.setItem('title','   هذه الصفحه غير موجوده '); 
+    if (localStorage.getItem('title') !='هذه الصفحه غير موجوده ') { 
+      localStorage.setItem('title','هذه الصفحه غير موجوده '); 
+   location.reload() 
+ } 
   }
   
 }
