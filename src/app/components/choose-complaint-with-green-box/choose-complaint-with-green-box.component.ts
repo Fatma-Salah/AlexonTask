@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChooseComplaintWithGreenBoxComponent implements OnInit {
    boxSuccess = document.querySelector('.container-body > div:nth-child(3)') as HTMLElement;
-   ngOnInit(): void {
+   ngOnInit(): void {  
+    if (localStorage.getItem('title') !=' نوع الشكوي ') { 
     localStorage.setItem('title',' نوع الشكوي '); 
+    location.reload() 
+  } 
   }
 }

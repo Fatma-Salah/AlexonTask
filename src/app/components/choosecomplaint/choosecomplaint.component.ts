@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./choosecomplaint.component.css']
 })
 export class ChoosecomplaintComponent implements OnInit{ 
-  ngOnInit(): void { 
-    localStorage.setItem('title',' نوع الشكوي '); 
+  ngOnInit(): void {  
+      if (localStorage.getItem('title') !=' نوع الشكوي ') { 
+        localStorage.setItem('title',' نوع الشكوي '); 
+        location.reload() 
+      } 
     const complainBoxElements: NodeListOf<HTMLElement> = document.querySelectorAll('.container-body > div');
-
 complainBoxElements.forEach((element: HTMLElement) => {
   /// add style to div 
  element.addEventListener('mouseenter',function(){

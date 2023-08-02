@@ -8,8 +8,11 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class ControlPanelComponent implements  OnInit {
   @Output() isAdmin = true;
  
-  ngOnInit(): void {
-   localStorage.setItem('title','لوحة التحكم');
+  ngOnInit(): void {  
+     if (localStorage.getItem('title') !='لوحة التحكم') { 
+      localStorage.setItem('title','لوحة التحكم');
+    location.reload() 
+  } 
   }
 
 }
