@@ -1,0 +1,101 @@
+
+  .container-header {
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 89px;
+  }
+  .container-body {
+    width: 70%;
+    margin: 54px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 156px);
+    gap: 31px 54px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-body > div {
+    border-radius: 4px;
+    border: 1px solid #8c8c8c;
+    background: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 11px;
+    height: 125px;
+  }
+  .frame {
+    display: flex;
+    /* width: 32px; */
+    height: 32px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #e2e2e2;
+  }
+  .box-title {
+    color: rgba(2, 1, 1, 0.87);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px; 
+    width: 113px; 
+  
+  }
+  .container-confirm {
+    display: flex;
+    width: 408px;
+    margin: auto;
+    height: 54px;
+    padding: 14px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 2px solid #c0c0c0;
+    color: #5b5b5b;
+    font-size: 20px;
+    font-style: normal;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  /* //////////////// */
+
+
+  @media (max-width: 430px) {
+    .container-confirm {
+      width: 80%;
+    }
+  }
+  .container {
+    min-height: 982px;
+  }
+  /* ////////////////  style when hover or clicked complaint box   //////////////// */
+  .box-success > p {
+    color: #ffffff !important;
+  }
+  .box-success {
+    filter: drop-shadow(0px 4px 4px rgba(108, 108, 108, 0.25)) !important;
+    background: #33835c !important;
+    border-radius: 4px;
+    border: none !important;
+  }
+  .box-success > .frame {
+    border: 1.5px solid #ffffff;
+  }
+  .box-success > .frame > svg > path {
+    fill: #ffffff;
+  }
+   
+  .container-confirm:hover {
+    color: white;
+    background: #33835C;
+    border: none;
+  }
+ 
