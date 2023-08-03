@@ -6,13 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/includes/navbar/navbar.component';
 import { ChoosecomplaintComponent } from './components/choosecomplaint/choosecomplaint.component';
 import { ControlPanelComponent } from './components/control-panel/control-panel.component';
-import { ChooseComplaintWithGreenBoxComponent } from './components/choose-complaint-with-green-box/choose-complaint-with-green-box.component';
 import { FooterComponent } from './components/includes/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
-    NavbarComponent, ChoosecomplaintComponent, ControlPanelComponent, ChooseComplaintWithGreenBoxComponent, FooterComponent
+    NavbarComponent, ChoosecomplaintComponent, ControlPanelComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
