@@ -29,6 +29,7 @@ element.addEventListener('mouseleave',function(){
 element.addEventListener('click',function (event) {
   const clickedBox = event.target;
   const button =document.querySelector('.container-confirm') as HTMLElement;
+console.log(clickedBox);
 
   // Add "box-success" class to the clicked box
   element.classList.add('box-success'); 

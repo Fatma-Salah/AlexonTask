@@ -7,6 +7,8 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 })
 export class NavbarComponent implements OnChanges ,OnInit{
   
+@Input() title !:string; 
+@Input() isAdmin!:boolean;
 ngOnInit(): void {
   if(this.isAdmin){
     const searchIcon= document.getElementById('search')as HTMLElement;
@@ -42,8 +44,6 @@ ngOnInit(): void {
   
   }
 }
-@Input() title !:string; 
-@Input() isAdmin!:boolean;
  
 ngOnChanges(changes: SimpleChanges): void {
   console.log(changes);
