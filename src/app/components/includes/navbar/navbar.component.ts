@@ -17,12 +17,14 @@ ngOnInit(): void {
   header.appendChild(searchAppear); 
   if(searchIcon!=null){
     searchIcon.addEventListener('click',function(){ 
-
-       this.parentElement?.classList.add('appearSearchDiv');
-       (this.parentElement)?.classList.remove('search-bar');
-      searchInput?.setAttribute ('style', 'background:#f4f4f4 !important;display:block !important;');
-      if(this.parentElement)
-      searchAppear.appendChild(this.parentElement);  
+      if(window.innerWidth<=530){
+        this.parentElement?.classList.add('appearSearchDiv');
+        (this.parentElement)?.classList.remove('search-bar');
+       searchInput?.setAttribute ('style', 'background:#f4f4f4 !important;display:block !important;');
+       if(this.parentElement)
+       searchAppear.appendChild(this.parentElement);  
+      }
+    
   });
   }
  

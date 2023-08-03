@@ -164,23 +164,3 @@
     }
   }
   
-  .contain {
-    margin: 0px 96px;
-  }
-  @media (max-width: 330px) {
-    .contain {
-      margin: 0px 5px !important;
-    }
-  }
-   
-  @media  (min-width:331px)and (max-width: 768px) {
-    .contain {
-      margin: 0px 10px !important;
-    }
-  }
-  @media  (min-width:769px)and (max-width: 992px) {
-    .contain {
-      margin: 0px 30px !important;
-    }
-  }
-   
