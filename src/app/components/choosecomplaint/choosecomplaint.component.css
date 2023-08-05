@@ -26,6 +26,7 @@
     text-align: center;
     gap: 11px;
     height: 125px;
+    cursor: pointer;
   }
   .frame {
     display: flex;
@@ -62,7 +63,7 @@
     font-style: normal;
     background-color: transparent;
     font-weight: 700;
-    cursor: pointer;
+    cursor: not-allowed;
     margin-bottom: 5px;
   }
   /* //////////////// */
@@ -99,4 +100,5 @@
     color: white;
     background: #33835C;
     border: none;
+    cursor:pointer  ;
   }
